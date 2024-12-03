@@ -3,8 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { ToastContainer } from "react-toastify";
-import UserProfile from "./DashBoard/UserProfile";
-import ModeratorProfile from "./pages/ModeratorProfile";
 import ProtectedRoute from "./ProtectedRoute";
 import "react-toastify/dist/ReactToastify.css";
 import DashBoardLayout from "./DashBoard/DashBoardLayout";
