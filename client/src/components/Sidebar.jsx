@@ -72,7 +72,7 @@ function Sidebar() {
     {
       icon: <PiUserListBold />,
       text: "User List",
-      onClick: () => navigate("/dashboard/users"),
+      onClick: () => navigate("/dashboard/all-users"),
     },
   ];
 
@@ -100,7 +100,7 @@ function Sidebar() {
     }
   }, []);
   return (
-    <div className="bg-white rounded-lg shadow-md flex flex-col justify-between space-y-2 w-full h-screen px-4 overflow-y-auto scrollbar-hide">
+    <div className="bg-white rounded-lg shadow-md flex flex-col justify-between space-y-2 w-full h-screen px-4 py-1">
       <div>
         <div className="flex items-center justify-center">
           <img src={logo} alt="logo" className="rounded-full" />
@@ -118,7 +118,7 @@ function Sidebar() {
           />
         ))}
       </div>
-      <div className="w-full mb-10">
+      <div className="w-full">
         <div className="w-full bg-[#92CBCE] rounded-2xl p-5">
           <h1 className="text-white text-xl font-semibold my-1">
             Support 24/7

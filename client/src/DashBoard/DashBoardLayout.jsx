@@ -4,6 +4,7 @@ import Dashboard from "./Dashboard";
 import UserProfile from "./UserProfile";
 import Sidebar from "../components/Sidebar";
 import EditProfie from "./EditProfie";
+import AllUsers from "./AllUsers";
 function DashBoardLayout() {
   return (
     <div className="w-full flex">
@@ -15,6 +16,7 @@ function DashBoardLayout() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/user-profile" element={<UserProfile />} />
           <Route path="/edit-profile" element={<EditProfie />} />
+          <Route path="all-users" element={<AllUsers />} />
         </Routes>
       </div>
     </div>
