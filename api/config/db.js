@@ -9,5 +9,4 @@ const dbConnection = async (url) => {
     process.exit(1);
   }
 };
-
 module.exports = dbConnection;

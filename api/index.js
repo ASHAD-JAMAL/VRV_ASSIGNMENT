@@ -5,7 +5,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-
 const mainRoutes = require("./routes/mainRoutes");
 const dbConnection = require("./config/db");
 const { PORT, MONGO_URL } = process.env;

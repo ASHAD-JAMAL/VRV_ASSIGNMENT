@@ -14,4 +14,5 @@ Router.post("/register", Register);
 Router.get("/user-details", verifyToken, UserDetails);
 Router.put("/update-profile", verifyToken, UpdateProfile);
 Router.get("/user-list", verifyToken, AllUsers);
+
 module.exports = Router;

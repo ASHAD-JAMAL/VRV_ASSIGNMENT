@@ -11,7 +11,7 @@ async function getToken(user) {
 }
 
 async function verifyToken(req, res, next) {
-  const token = req.headers.authorization.split(" ")[1];
+  const token = req.headers.authorization?.split(" ")[1];
   if (!token) {
     return res.status(httpStatusCode.UNAUTHORIZED).json({
       success: false,
@@ -23,13 +23,14 @@ async function verifyToken(req, res, next) {
     req.user = decoded.user;
     next();
   } catch (error) {
-    console.error("Error in verifyToken", error);
+    console.error("Error in verifyToken:", error);
     return res.status(httpStatusCode.UNAUTHORIZED).json({
       success: false,
       message: "Unauthorized",
     });
   }
 }
+
 module.exports = {
   getToken,
   verifyToken,
