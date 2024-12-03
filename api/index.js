@@ -18,7 +18,10 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["https://vrv-assignment-i7p6.vercel.app/"],
+    origin: [
+      "http://localhost:5173/",
+      "https://vrv-assignment-i7p6.vercel.app/",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     preflightContinue: false,
     optionsSuccessStatus: 204,
