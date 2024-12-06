@@ -3,6 +3,8 @@
 
 # VRV Assignment: Role-Based Access Control (RBAC)
 
+Currently Google Authentication Is Not Working....I will add this feature very soon.
+
 ## Overview
 This project implements a complete  Role-Based Access Control (RBAC)  system with a  frontend  and  backend . The application allows users to register, log in, and access resources based on their roles (e.g., Admin, Moderator, or User). The solution follows best practices for  authentication ,  authorization , and secure role-based access.
 
